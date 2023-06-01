@@ -3,7 +3,7 @@ import streamlit as st
 import streamlit.components.v1 as stc
 import requests 
 
-base_url = "https://indeed-indeed.p.rapidapi.com/apisearch"
+base_url = "https://jobs.github.com/positions.json?description={}&location={}"
 
 # Fxn to Retrieve Data
 def get_data(url):
