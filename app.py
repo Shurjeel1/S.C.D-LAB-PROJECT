@@ -28,7 +28,6 @@ JOB_DES_HTML_TEMPLATE = """
 </div>
 """
 
-
 def main():
 	menu = ["Home","About"]
 	choice = st.sidebar.selectbox("Menu",menu)
@@ -40,7 +39,7 @@ def main():
 
 		# Nav  Search Form
 		with st.form(key='searchform'):
-			nav1,nav2,nav3 = st.beta_columns([3,2,1])
+			nav1,nav2,nav3 = st.columns([3,2,1])
 
 			with nav1:
 				search_term = st.text_input("Search Job")
@@ -54,7 +53,7 @@ def main():
 		st.success("You searched for {} in {}".format(search_term,location))
 
 		# Results
-		col1, col2 = st.beta_columns([2,1])
+		col1, col2 = st.columns([2,1])
 
 		with col1:
 			if submit_search:
