@@ -1,1 +1,0 @@
-# S.C.D-LAB-PROJECT
